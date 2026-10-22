@@ -1,0 +1,12 @@
+# Pinned to released versions chosen for mutual compatibility on Python 3.10-3.12.
+# NOTE: these pins were NOT install-tested in the build sandbox (it had no internet). See docs/testing_report.md.
+streamlit==1.40.2
+SQLAlchemy==2.0.36
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+sentence-transformers==3.3.1
+google-genai==1.10.0
+pypdf==5.1.0
+python-dotenv==1.0.1
+pytest==8.3.4

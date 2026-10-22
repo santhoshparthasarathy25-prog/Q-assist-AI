@@ -1,0 +1,73 @@
+erDiagram
+    conversations ||--o{ messages : has
+    messages ||--o| intent_records : classified_as
+    messages ||--o{ source_records : cites
+    messages ||--o{ admin_requests : creates
+    messages ||--o{ escalation_events : triggers
+    evaluation_runs ||--o{ evaluation_results : contains
+
+    conversations {
+        int id PK
+        string session_id
+        datetime started_at
+        datetime ended_at
+        bool is_seed
+    }
+    messages {
+        int id PK
+        int conversation_id FK
+        string role "user|assistant"
+        text content
+        datetime created_at
+    }
+    intent_records {
+        int id PK
+        int message_id FK "unique"
+        string label
+        int rule_matches
+        string reason
+        string workflow
+        bool escalation_required
+        string answer_mode "live|demo|rule"
+        string response_type
+        float latency_ms
+    }
+    source_records {
+        int id PK
+        int message_id FK
+        string source
+        string chunk_id
+        float score
+        int rank
+    }
+    admin_requests {
+        int id PK
+        int message_id FK
+        string request_type
+        string status
+        bool simulated
+        string description
+    }
+    escalation_events {
+        int id PK
+        int message_id FK
+        string kind "urgent|human_request"
+        string reason "category only"
+    }
+    evaluation_runs {
+        int id PK
+        datetime started_at
+        int total
+        int passed
+        text metrics_json
+    }
+    evaluation_results {
+        int id PK
+        int run_id FK
+        string scenario_id
+        string category
+        bool passed
+        string expected_intent
+        string actual_intent
+        float latency_ms
+    }

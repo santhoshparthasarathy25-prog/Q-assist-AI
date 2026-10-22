@@ -1,0 +1,9 @@
+{
+  "note": "Synthetic demo questions only. They are replayed through the real pipeline by scripts/init_database.py --seed.",
+  "conversations": [
+    {"session_id": "seed-session-1", "questions": ["What are your opening hours?", "And on Saturday?", "How do I request a repeat prescription?"]},
+    {"session_id": "seed-session-2", "questions": ["How can I book an appointment?", "Can I cancel it later?", "I would like to speak to a person"]},
+    {"session_id": "seed-session-3", "questions": ["Do you have wheelchair access?", "How do I update my address?", "Do you offer physiotherapy?"]},
+    {"session_id": "seed-session-4", "questions": ["I have chest pain", "What dose of ibuprofen should I take?", "What is your phone number?"]}
+  ]
+}

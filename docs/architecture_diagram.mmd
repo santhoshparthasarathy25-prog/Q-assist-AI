@@ -1,0 +1,37 @@
+flowchart TD
+    U([Patient]) -->|types| UI[Streamlit UI<br/>chat_page.py]
+    U -->|speaks| MIC[Browser SpeechRecognition<br/>speech_input.py]
+    MIC -->|editable transcript| UI
+    UI --> RS[ReceptionistService.handle]
+    RS --> V{Valid input?}
+    V -- no --> INV[Invalid-input message]
+    V -- yes --> SAF{Urgent-risk rule?<br/>safety_rules.py}
+    SAF -- yes --> ESC[Fixed 999/111 escalation<br/>NO LLM call]
+    SAF -- no --> INJ{Injection pattern?}
+    INJ -- yes --> DEC[Decline message]
+    INJ -- no --> NLP[Intent classifier<br/>intent_classifier.py]
+    NLP -->|human_assistance| HAND[Simulated handoff]
+    NLP -->|unsupported medical| DECL[Safe decline + signpost]
+    NLP --> RET[Retriever<br/>embeddings + vector store]
+    KB[(data/knowledge_base<br/>TXT / PDF)] --> ING[Loader -> Chunker -> Embedder]
+    ING --> IDX[(data/storage/index)]
+    IDX --> RET
+    RET --> TH{Score >= threshold?}
+    TH -- no --> FB[Fallback: cannot verify<br/>NO LLM call]
+    TH -- yes --> PB[Prompt builder<br/>sanitised context]
+    PB --> LLM{LLM available?}
+    LLM -- yes --> GEM[Gemini API<br/>llm_service.py]
+    LLM -- no / error --> DEMO[Demo responder<br/>extractive, labelled]
+    GEM --> OUT[Response]
+    DEMO --> OUT
+    ESC --> OUT
+    HAND --> OUT
+    DECL --> OUT
+    FB --> OUT
+    DEC --> OUT
+    INV --> OUT
+    OUT --> WF[Request router<br/>simulated workflow]
+    WF --> DB[(SQLite via SQLAlchemy<br/>repository.py)]
+    OUT --> UI
+    UI -->|Read aloud| TTS[Browser speechSynthesis<br/>speech_output.py]
+    DB --> DASH[Dashboard / Evaluation pages]

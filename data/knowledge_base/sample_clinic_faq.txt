@@ -1,0 +1,16 @@
+FICTIONAL DEMO CLINIC - Riverbank Example Surgery. All details below are invented for a software demonstration. This is not a real GP practice.
+
+OPENING HOURS
+Riverbank Example Surgery is open Monday to Friday from 8:00am to 6:30pm. On Saturday the surgery is open from 9:00am to 12:30pm for pre-booked appointments only. The surgery is closed on Sundays and on UK bank holidays. The telephone lines open at 8:00am on weekdays.
+
+CONTACT DETAILS
+The main telephone number is 01632 960 100 (a fictional number). The reception email address is reception@riverbank-example.invalid (fictional). The surgery address is 1 Example Street, Exampleton, EX1 1AA (fictional). Calls are answered in the order they are received.
+
+ACCESSIBILITY
+The building has step-free access at the front entrance and an accessible toilet on the ground floor. Two accessible parking bays are available beside the entrance. A hearing loop is installed at the reception desk. Patients can ask for a British Sign Language or spoken-language interpreter by telling reception when they request an appointment, ideally 48 hours in advance. Large-print documents are available on request.
+
+HOW TO REQUEST HUMAN ASSISTANCE
+Patients can ask to speak to a member of the reception team at any time by telephone or at the front desk. In this demo, the assistant can create a simulated handoff request for the reception team. Reception staff aim to respond to handoff requests on the same working day.
+
+WHEN TO CONTACT URGENT OR EMERGENCY SERVICES
+The surgery does not provide emergency care. In a life-threatening emergency, call 999. For urgent medical help that is not life-threatening, use NHS 111 online or by telephone. Please do not use the reception email address or this chat for emergencies.

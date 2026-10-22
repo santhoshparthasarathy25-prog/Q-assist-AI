@@ -1,0 +1,16 @@
+FICTIONAL DEMO CLINIC - Riverbank Example Surgery appointment policy (invented for demonstration).
+
+REQUESTING AN APPOINTMENT
+Patients can request an appointment by telephoning the surgery from 8:00am on weekdays, by visiting the front desk, or by using the fictional online request form. Reception will ask for the patient's full name, date of birth and a short, non-clinical reason so that the right type of appointment can be offered. Patients are not required to give detailed medical information to reception.
+
+SAME-DAY AND ROUTINE APPOINTMENTS
+A limited number of same-day appointments are released each morning at 8:00am. Routine appointments can usually be booked up to four weeks ahead. Appointments may be with a GP, nurse, or another clinician depending on the need.
+
+CHANGING OR CANCELLING AN APPOINTMENT
+Please cancel or change an appointment at least 24 hours in advance by telephone or through the online request form so the slot can be offered to someone else. Patients who miss several appointments without notice may be contacted by the practice manager.
+
+LATE ARRIVALS
+If you arrive more than 10 minutes late, the clinician may need to offer a new appointment.
+
+IMPORTANT
+This assistant only logs appointment enquiries in a simulated workflow. It cannot book, change or cancel real appointments.

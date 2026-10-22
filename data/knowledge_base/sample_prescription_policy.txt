@@ -1,0 +1,16 @@
+FICTIONAL DEMO CLINIC - Riverbank Example Surgery prescription policy (invented for demonstration).
+
+REPEAT PRESCRIPTION REQUESTS
+Patients on regular medication can request a repeat prescription through the fictional online request form, by handing a written request to the front desk, or through their nominated pharmacy. Telephone requests for repeat prescriptions are not accepted, to reduce errors.
+
+PROCESSING TIME
+Please allow 3 working days for repeat prescription requests to be processed. Requests received on Friday after 12:00pm may be processed on the next working day after the weekend. Ask early if you are about to run out.
+
+NOMINATED PHARMACY
+Patients can nominate a pharmacy so approved prescriptions are sent there electronically. To change your nominated pharmacy, tell reception or your chosen pharmacy.
+
+MEDICATION REVIEWS
+Some repeat prescriptions need a medication review with a clinician before they can be renewed. Reception cannot decide whether a medication is suitable for you or change any dose. For medicine advice speak to a pharmacist or clinician.
+
+IMPORTANT
+This assistant only logs prescription enquiries in a simulated workflow. It cannot issue or authorise real prescriptions.
